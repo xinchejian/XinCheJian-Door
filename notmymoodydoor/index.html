@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Not (Yet) Moody Door</title>
+        <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
+    </head>
+    <body>
+        <div id="content">
+        <h1>Not (Yet) Moody Door</h1>
+        <h2>Profiles</h2>
+        {% if profiles_empty %}
+        <p>No profiles, yet.</p>
+        {% endif %}
+        <ul>
+        {% for profile in profiles %}
+            <li><a href="/profile?key={{ profile.key }}">{{ profile.name }}</a>
+            ({{ profile.rfid }})
+            <a href="/config?key={{ profile.key }}">edit</a>
+            <a href="/delete?key={{ profile.key }}">delete</a></li>
+        {% endfor %}
+        </ul>
+        <p><a href="/config">Add Profile</a></p>
+        <p><a href="/view">Last Accessed</a> (automatically refreshes every 10
+        seconds)</p>
+        </div>
+    </body>
+</html>
