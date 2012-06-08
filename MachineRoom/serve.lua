@@ -11,7 +11,7 @@ lock()
 
 -- Capture the output of system command
 -- Shamelessly copied form http://stackoverflow.com/questions/132397/get-back-the-output-of-os-execute-in-lua
-local function os.capture(cmd, raw)
+function os.capture(cmd, raw)
   local f = assert(io.popen(cmd, 'r'))
   local s = assert(f:read('*a'))
   f:close()
