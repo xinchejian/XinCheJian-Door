@@ -1,4 +1,3 @@
-
 local function setled(i)
     local f = assert(io.open("/sys/class/leds/tp-link\:blue\:system/brightness", "w"))
     f:write(i)
@@ -7,8 +6,36 @@ end
 
 local function lock() setled(0) end
 local function unlock() setled(255) end
-
+    
 lock()
+
+-- Capture the output of system command
+-- Shamelessly copied form http://stackoverflow.com/questions/132397/get-back-the-output-of-os-execute-in-lua
+local function os.capture(cmd, raw)
+  local f = assert(io.popen(cmd, 'r'))
+  local s = assert(f:read('*a'))
+  f:close()
+  if raw then return s end
+    s = string.gsub(s, '^%s+', '')
+    s = string.gsub(s, '%s+$', '')
+    s = string.gsub(s, '[\n\r]+', ' ')
+  return s
+end
+
+-- Use the system command md5sum to findout the md5 checksum of certain string
+local function md5sum(str)
+  raw = os.capture('echo "' .. str .. '" | md5sum')
+  md5 = string.sub(raw, 0, 32)
+  return md5
+end
+
+-- Extract the 'pin' parameter from a HTTP request
+local function getPin(firstLine)
+  i, j = string.find(firstLine, '?pin=')
+  pin = string.sub(firstLine, j + 1)
+  i, j = string.find(pin, ' ')
+  return string.sub(pin, 0, i - 1)
+end
 
 -- load namespace
 local socket = require("socket")
@@ -22,6 +49,12 @@ print("Webserver running on port " .. port)
 local header = "HTTP/1.0 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n" ..
   "<html><head><title>XCJ Machine Room</title><meta name='viewport' content='width=120'></head><body onload='document.getElementById(\"pin\").focus()'>"
 local footer = "</body></html>"
+
+-- Salt added to the password before md5 hash
+local password_salt = 'xinchejian'
+
+-- Hardcoded password
+local password_hash = '78b3087ef1365a27ac821832b0823473'
 
 local function main ()
   -- wait for a connection from any client
@@ -42,7 +75,7 @@ local function main ()
       if err then break end
     end
     -- if there was no error, send it back to the client
-    if firstLine == "GET /lock?pin=0326 HTTP/1.1" then
+    if md5sum(password_salt .. getPin(firstLine)) == password_hash then
       -- open the door
       unlock()
       client:send(header .. "Opened" .. footer)
