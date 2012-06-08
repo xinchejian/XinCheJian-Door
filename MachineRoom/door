@@ -5,9 +5,9 @@ START=90
 SERVICE_DAEMONIZE=1
 
 start(){
-        service_start lua /usr/bin/serve.lua
+        service_start /usr/bin/lua /usr/bin/serve.lua
 }
 
 stop() {
-        service_stop lua /usr/bin/serve.lua
+        service_stop /usr/bin/lua /usr/bin/serve.lua
 }

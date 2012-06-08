@@ -32,6 +32,7 @@ end
 -- Extract the 'pin' parameter from a HTTP request
 local function getPin(firstLine)
   i, j = string.find(firstLine, '?pin=')
+  if(i == nil) then return '' end
   pin = string.sub(firstLine, j + 1)
   i, j = string.find(pin, ' ')
   return string.sub(pin, 0, i - 1)
