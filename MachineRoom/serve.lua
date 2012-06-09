@@ -35,6 +35,7 @@ local function getPin(firstLine)
   if(i == nil) then return '' end
   pin = string.sub(firstLine, j + 1)
   i, j = string.find(pin, ' ')
+  if(i == nil) then return pin end
   return string.sub(pin, 0, i - 1)
 end
 
