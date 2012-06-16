@@ -41,6 +41,7 @@ end
 
 -- load namespace
 local socket = require("socket")
+local http = require("socket.http")
 -- create a TCP socket and bind it to the local host, at any port
 local server = assert(socket.bind("*", 8080))
 -- find out which port the OS chose for us
@@ -81,6 +82,8 @@ local function main ()
       -- open the door
       unlock()
       client:send(header .. "Opened" .. footer)
+      http.request("http://api.wizz.cc/?sn=001D92164E18&token=SECRET&server=violet&tts=the+machine+room+is+open.&voice=en")
+
     else
       client:send(header ..
         "<form method='GET' action='lock'>PIN <input id='pin' name='pin' type='password' maxlength='4' size='4'/> <input type='submit' value='Unlock'/></form>"..footer)
