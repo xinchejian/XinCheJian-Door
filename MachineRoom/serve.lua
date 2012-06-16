@@ -48,7 +48,7 @@ local ip, port = server:getsockname()
 -- print a message informing what's up
 print("Webserver running on port " .. port)
 -- http header
-local header = "HTTP/1.0 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n" ..
+local header = "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n" ..
   "<html><head><title>XCJ Machine Room</title><meta name='viewport' content='width=120'></head><body onload='document.getElementById(\"pin\").focus()'>"
 local footer = "</body></html>"
 
@@ -76,7 +76,7 @@ local function main ()
       if line == "" then break end
       if err then break end
     end
-    -- if there was no error, send it back to the client
+    -- if there was no error, send response back to the client
     if md5sum(password_salt .. getPin(firstLine)) == password_hash then
       -- open the door
       unlock()
