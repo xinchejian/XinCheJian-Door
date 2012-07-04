@@ -1,5 +1,10 @@
 #!/bin/sh
 # To be setup as a cron job to check network connectivity and reboot the server when necessary.
+#
+# Cron string
+#m	h	dom	mon	dow	command
+#*/5	*	*	*	*	/usr/bin/heartbeat.sh
+
 touch /root/heartbeat.lastrun
                              
 REBOOTLOG=/root/reboot.log
