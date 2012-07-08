@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4516970815A9979B00CB268D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4516970715A9979B00CB268D /* UIKit.framework */; };
+		4516970A15A9979B00CB268D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4516970915A9979B00CB268D /* Foundation.framework */; };
+		4516970C15A9979B00CB268D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4516970B15A9979B00CB268D /* CoreGraphics.framework */; };
+		4516971215A9979B00CB268D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4516971015A9979B00CB268D /* InfoPlist.strings */; };
+		4516971415A9979B00CB268D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4516971315A9979B00CB268D /* main.m */; };
+		4516971815A9979C00CB268D /* xcjAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4516971715A9979C00CB268D /* xcjAppDelegate.m */; };
+		4516971B15A9979C00CB268D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4516971915A9979C00CB268D /* MainStoryboard_iPhone.storyboard */; };
+		4516971E15A9979C00CB268D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4516971C15A9979C00CB268D /* MainStoryboard_iPad.storyboard */; };
+		4516972115A9979C00CB268D /* xcjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4516972015A9979C00CB268D /* xcjViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4516970315A9979B00CB268D /* xinchejian-door.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xinchejian-door.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4516970715A9979B00CB268D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4516970915A9979B00CB268D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4516970B15A9979B00CB268D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4516970F15A9979B00CB268D /* xinchejian-door-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xinchejian-door-Info.plist"; sourceTree = "<group>"; };
+		4516971115A9979B00CB268D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4516971315A9979B00CB268D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4516971515A9979C00CB268D /* xinchejian-door-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xinchejian-door-Prefix.pch"; sourceTree = "<group>"; };
+		4516971615A9979C00CB268D /* xcjAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xcjAppDelegate.h; sourceTree = "<group>"; };
+		4516971715A9979C00CB268D /* xcjAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcjAppDelegate.m; sourceTree = "<group>"; };
+		4516971A15A9979C00CB268D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		4516971D15A9979C00CB268D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		4516971F15A9979C00CB268D /* xcjViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xcjViewController.h; sourceTree = "<group>"; };
+		4516972015A9979C00CB268D /* xcjViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xcjViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4516970015A9979B00CB268D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4516970815A9979B00CB268D /* UIKit.framework in Frameworks */,
+				4516970A15A9979B00CB268D /* Foundation.framework in Frameworks */,
+				4516970C15A9979B00CB268D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451696F815A9979B00CB268D = {
+			isa = PBXGroup;
+			children = (
+				4516970D15A9979B00CB268D /* xinchejian-door */,
+				4516970615A9979B00CB268D /* Frameworks */,
+				4516970415A9979B00CB268D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4516970415A9979B00CB268D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4516970315A9979B00CB268D /* xinchejian-door.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4516970615A9979B00CB268D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4516970715A9979B00CB268D /* UIKit.framework */,
+				4516970915A9979B00CB268D /* Foundation.framework */,
+				4516970B15A9979B00CB268D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4516970D15A9979B00CB268D /* xinchejian-door */ = {
+			isa = PBXGroup;
+			children = (
+				4516971615A9979C00CB268D /* xcjAppDelegate.h */,
+				4516971715A9979C00CB268D /* xcjAppDelegate.m */,
+				4516971915A9979C00CB268D /* MainStoryboard_iPhone.storyboard */,
+				4516971C15A9979C00CB268D /* MainStoryboard_iPad.storyboard */,
+				4516971F15A9979C00CB268D /* xcjViewController.h */,
+				4516972015A9979C00CB268D /* xcjViewController.m */,
+				4516970E15A9979B00CB268D /* Supporting Files */,
+			);
+			path = "xinchejian-door";
+			sourceTree = "<group>";
+		};
+		4516970E15A9979B00CB268D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4516970F15A9979B00CB268D /* xinchejian-door-Info.plist */,
+				4516971015A9979B00CB268D /* InfoPlist.strings */,
+				4516971315A9979B00CB268D /* main.m */,
+				4516971515A9979C00CB268D /* xinchejian-door-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4516970215A9979B00CB268D /* xinchejian-door */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4516972415A9979C00CB268D /* Build configuration list for PBXNativeTarget "xinchejian-door" */;
+			buildPhases = (
+				451696FF15A9979B00CB268D /* Sources */,
+				4516970015A9979B00CB268D /* Frameworks */,
+				4516970115A9979B00CB268D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xinchejian-door";
+			productName = "xinchejian-door";
+			productReference = 4516970315A9979B00CB268D /* xinchejian-door.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		451696FA15A9979B00CB268D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = xcj;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 451696FD15A9979B00CB268D /* Build configuration list for PBXProject "xinchejian-door" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 451696F815A9979B00CB268D;
+			productRefGroup = 4516970415A9979B00CB268D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4516970215A9979B00CB268D /* xinchejian-door */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4516970115A9979B00CB268D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4516971215A9979B00CB268D /* InfoPlist.strings in Resources */,
+				4516971B15A9979C00CB268D /* MainStoryboard_iPhone.storyboard in Resources */,
+				4516971E15A9979C00CB268D /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		451696FF15A9979B00CB268D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4516971415A9979B00CB268D /* main.m in Sources */,
+				4516971815A9979C00CB268D /* xcjAppDelegate.m in Sources */,
+				4516972115A9979C00CB268D /* xcjViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4516971015A9979B00CB268D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4516971115A9979B00CB268D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4516971915A9979C00CB268D /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4516971A15A9979C00CB268D /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4516971C15A9979C00CB268D /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4516971D15A9979C00CB268D /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4516972215A9979C00CB268D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4516972315A9979C00CB268D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4516972515A9979C00CB268D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xinchejian-door/xinchejian-door-Prefix.pch";
+				INFOPLIST_FILE = "xinchejian-door/xinchejian-door-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4516972615A9979C00CB268D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xinchejian-door/xinchejian-door-Prefix.pch";
+				INFOPLIST_FILE = "xinchejian-door/xinchejian-door-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		451696FD15A9979B00CB268D /* Build configuration list for PBXProject "xinchejian-door" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4516972215A9979C00CB268D /* Debug */,
+				4516972315A9979C00CB268D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4516972415A9979C00CB268D /* Build configuration list for PBXNativeTarget "xinchejian-door" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4516972515A9979C00CB268D /* Debug */,
+				4516972615A9979C00CB268D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 451696FA15A9979B00CB268D /* Project object */;
+}
