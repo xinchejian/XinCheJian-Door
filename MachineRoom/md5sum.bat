@@ -1,0 +1,1 @@
+@rdmd -quiet --eval=writeln(std.md5.getDigestString(std.file.read(\"%1\")).toLower~\"\x20\x20%1\")

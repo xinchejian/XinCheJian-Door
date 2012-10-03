@@ -1,0 +1,1 @@
+@rdmd -quiet --eval=writeln(std.md5.getDigestString(\"xinchejian%1\n\").toLower)
