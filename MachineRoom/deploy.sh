@@ -7,7 +7,7 @@ chmod a+x arp
 scp arp root@10.0.10.9:/usr/bin/
 
 echo 'Copying tts-token ...'
-scp tts-token root@10.0.10.9:/usr/bin/
+scp tts-token root@10.0.10.9:/root/
 
 echo 'Copy the door init service script ..'
 chmod a+x door
