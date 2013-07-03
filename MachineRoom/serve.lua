@@ -67,14 +67,14 @@ local ip, port = server:getsockname()
 print("Webserver running on port " .. port)
 -- http header
 local header = "HTTP/1.1 200 OK\r\nConnection: close\r\nContent-Type: text/html\r\n\r\n" ..
-  "<html><head><title>XCJ Front Door</title><meta name='viewport' content='width=120'></head><body onload='document.getElementById(\"pin\").focus()'>"
+  "<html><head><title>XCJ Machine Room</title><meta name='viewport' content='width=120'></head><body onload='document.getElementById(\"pin\").focus()'>"
 local footer = "</body></html>"
 
 -- Salt added to the password before md5 hash
 local password_salt = 'xinchejian'
 
 -- Hardcoded password
-local password_hash = '78b3087ef1365a27ac821832b0823473'
+local password_hash = 'a2b99d32956e56fa9bbddca655a489b2'
 
 local function main ()
 	-- make sure we don't block waiting for this client's line
