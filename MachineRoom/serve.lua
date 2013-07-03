@@ -12,19 +12,15 @@ local function writeio(i, val)
   writeAll("/sys/class/gpio/gpio"..i.."/value", val)
 end
 
-local function lock()
-  writeio('0', '1')
-  socket.sleep(1)
-  writeio('0', '0')
+local function setled(i)
+  if TESTING then return end
+  writeAll("/sys/class/leds/tp-link\:blue\:system/brightness", i)
 end
 
-local function unlock()
-  writeio('29', '1')
-  socket.sleep(1)
-  writeio('29', '0')
-end
+local function lock() setled(0) end
+local function unlock() setled(255) end
 
---lock()
+lock()
 
 -- Capture the output of system command
 -- Shamelessly copied form http://stackoverflow.com/questions/132397/get-back-the-output-of-os-execute-in-lua
