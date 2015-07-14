@@ -138,7 +138,7 @@ local function main ()
   local dow = tonumber(os.date("%w"))                                      
   local hour = tonumber(os.date("%H"))                                      
   -- Auto-lock the door, except on Wednesday's betwen 7 and 9pm
-  if ((hour <= 18 or hour >= 21 or dow != 3) and UNLOCKED == 1) then                                        
+  if ((hour <= 18 or hour >= 21 or dow ~= 3) and UNLOCKED == 1) then                                        
     print "Locking Door"
     os.execute('`sleep 5; echo c > /dev/ttyACM0` 2>&1 ')                    
   end
